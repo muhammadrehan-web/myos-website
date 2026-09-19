@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="referrer" content="origin" />
+  <title>MyOS — Desktop Portfolio Framer Template</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Mona+Sans:ital,wght@0,400;0,500;0,600;0,700;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css?v=44" />
+</head>
+<body>
+  <div class="os" id="os">
+    <div class="wallpaper"></div>
+
+    <header class="menubar">
+      <div class="logo">Masen James</div>
+      <div class="menubar-right">
+        <div class="socials">
+          <a href="#" aria-label="Notes"><img src="assets/icons/notes.svg" alt="" /></a>
+          <a href="https://x.com" target="_blank" rel="noreferrer" aria-label="X"><img src="assets/icons/x.svg" alt="" /></a>
+          <a href="https://instagram.com" target="_blank" rel="noreferrer" aria-label="Instagram"><img src="assets/icons/instagram.svg" alt="" /></a>
+        </div>
+        <div class="clock" id="clock"></div>
+      </div>
+    </header>
+
+    <div class="desktop" id="desktop">
+      <button class="icon i-framer" data-open="external" data-url="https://www.framer.com/@talha-uxd/">
+        <img src="assets/img/mZqGpzVPfXwbNcjhjFyqOoyYY.png" alt="" /><span>Framer</span>
+      </button>
+      <button class="icon i-music" data-open="ipod">
+        <img src="assets/img/S2dPCIKpWlDgRhbT7ZLDwM2v9s.png" alt="" /><span>Music</span>
+      </button>
+      <button class="icon i-resume" data-open="resume">
+        <img src="assets/img/lMVci5SNdljIQS4LiI3djqZLQk.png" alt="" /><span>Resume</span>
+      </button>
+      <button class="icon i-veyra" data-open="projects" data-project="veyra">
+        <img src="assets/img/uy87JonjAVE23J7z8J81GA0A0U.png" alt="" /><span>Veyra</span>
+      </button>
+      <button class="icon i-figma" data-open="external" data-url="https://www.figma.com">
+        <img src="assets/img/Fa7Ks6pz00sczkXCYO8Qmz7GPA.png" alt="" /><span>Figma</span>
+      </button>
+      <button class="icon i-sorae" data-open="projects" data-project="sorae">
+        <img src="assets/img/xybTQ8M8gQkUOzQ57Horl5riXsc.png" alt="" /><span>Sorae</span>
+      </button>
+      <button class="icon i-laver" data-open="projects" data-project="laver">
+        <img src="assets/img/oPWqkM4Rtq6IW8rAis6I2SC7CfE.png" alt="" /><span>Laver</span>
+      </button>
+      <button class="icon i-atria" data-open="projects" data-project="atria">
+        <img src="assets/img/qy5LwBcw9X277bvPo6OZEanrtdY.png" alt="" /><span>Atria</span>
+      </button>
+      <button class="icon i-plinq" data-open="projects" data-project="plinq">
+        <img src="assets/img/HcRlNxppO9AMHI0KhcKJtc3wvO0.png" alt="" /><span>Plinq</span>
+      </button>
+      <button class="icon i-nuvio" data-open="projects" data-project="nuvio">
+        <img src="assets/img/BL7zv9EGej7d1dYE5rLEhB911pI.png" alt="" /><span>Nuvio</span>
+      </button>
+      <button class="icon i-about" data-open="about">
+        <img src="assets/img/mpLoZ8OywwyBRHZrb96PxvZ1Is.png" alt="" /><span id="aboutLabel">About Me</span>
+      </button>
+      <button class="icon i-interstellar" data-open="movies">
+        <img src="assets/img/PWuUiO2aouvctH4NNK1MNPe9o.png" alt="" /><span>Interstellar</span>
+      </button>
+      <button class="icon i-game wide" data-open="game">
+        <img src="assets/img/NBs3etFTadPxbSVNjpbB56GouU.png" alt="" /><span>Herding cats</span>
+      </button>
+      <button class="icon i-resources" data-open="resources">
+        <img src="assets/img/dNUl2Ob68CbdwU9wmtjvGraRyk.png" alt="" /><span>Resources</span>
+      </button>
+    </div>
+
+    <button class="cats-toggle" id="catsToggle" type="button">
+      <span>You like cats?</span>
+      <span class="switch"><i></i></span>
+    </button>
+
+    <div class="dock-wrap">
+      <nav class="dock">
+        <button class="dock-item" data-open="about"><span class="tip">About</span><img src="assets/img/1X4pnmera790LOPkPTTP1zyOcJI.png" alt="About" /></button>
+        <button class="dock-item" data-open="projects"><span class="tip">Projects</span><img src="assets/img/oiUFcFGXTqeEgrYrOAetMoYs0.png" alt="Projects" /></button>
+        <button class="dock-item" data-open="gallery"><span class="tip">Gallery</span><img src="assets/img/3KAjwFg3Vs6OQWKEepih5JnMoo.png" alt="Gallery" /></button>
+        <button class="dock-item" data-open="reel"><span class="tip">Reel</span><img src="assets/img/aTak0a7zFvo2sb8xgwbBVmgxq4.png" alt="Reel" /></button>
+        <button class="dock-item" data-open="contact"><span class="tip">Contact</span><img src="assets/img/czNCmarMvIpvhboxeEDI8G2qrU.png" alt="Contact" /><span class="badge">1</span></button>
+      </nav>
+    </div>
+
+    <a class="framer-badge" href="https://www.framer.com" target="_blank" rel="noreferrer">
+      <svg width="12" height="12" viewBox="0 0 12 12"><path fill="#000" d="M0 0h12v4H6L0 0Zm0 4h6l6 4H6v4L0 8V4Z"/></svg>
+      Made in Framer
+    </a>
+
+    <!-- ABOUT -->
+    <section class="win" id="win-about" style="left:55px;top:2px" data-x="55" data-y="2">
+      <div class="titlebar">
+        <div class="traffic"><button class="tl-close" data-act="close"></button><button class="tl-min" data-act="min"></button><button class="tl-max" data-act="max"></button></div>
+        <div class="win-socials">
+          <a href="#" aria-label="LinkedIn"><img src="assets/icons/linkedin.svg" alt="" /></a>
+          <a href="https://x.com" target="_blank" rel="noreferrer" aria-label="X"><img src="assets/icons/x.svg" alt="" /></a>
+          <a href="https://instagram.com" target="_blank" rel="noreferrer" aria-label="Instagram"><img src="assets/icons/instagram.svg" alt="" /></a>
+        </div>
+      </div>
+      <div class="win-body">
+        <h2 class="win-title">About Me</h2>
+        <div class="about-grid">
+          <img src="assets/img/xgbjcCXCBjxJCXwrzv72FvO0SBs.png" alt="Mason James" />
+          <div class="about-copy">
+            <h3>Mason James</h3>
+            <p>I’m a multidisciplinary designer turning ideas into bold digital experiences, thoughtful products, and visual systems people remember.</p>
+            <div class="status"><span class="dot"></span> Available for work</div>
+            <div class="about-links">
+              <button type="button" class="copy-chip" data-copy="masonjames@designer">
+                <span class="copy-label">masonjames@designer</span>
+                <span class="copy-done">Copied!</span>
+              </button>
+              <button type="button" class="copy-chip" data-copy="+92 300 642 1234">
+                <span class="copy-label">+92 300 642 1234</span>
+                <span class="copy-done">Copied!</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="services">
+          <h3>Services</h3>
+          <div class="svc-row">
+            <div class="svc"><img src="assets/img/IbWeDpfHeHsVAQlPnx410HC4Oew.png" alt="" /><strong>Web Design</strong><span>Distinctive websites with clear visuals and thoughtful interactions.</span></div>
+            <div class="svc"><img src="assets/img/j9itQ0VvSxiJ2LdOY9EfhxP9AU.png" alt="" /><strong>Product Design</strong><span>Simple, user-focused interfaces with clear flows and intuitive experiences.</span></div>
+            <div class="svc"><img src="assets/img/cAlfNdFoPWGl3qAnKjyBo2uvCeM.png" alt="" /><strong>Creative Direction</strong><span>Visual concepts and art direction that create clear, memorable digital brands.</span></div>
+          </div>
+        </div>
+        <div class="about-projects">
+          <h3>Projects</h3>
+          <div class="ap-grid">
+            <button type="button" class="ap-card" data-open="projects" data-project="laver">
+              <img src="assets/img/aW7A9FUI7biW9avIUSHivukRgo.png" alt="Laver" />
+              <div class="ap-meta"><strong>Laver</strong><span>Agency Website</span><em>2023</em></div>
+            </button>
+            <button type="button" class="ap-card" data-open="projects" data-project="atria">
+              <img src="assets/img/NZEmM7jRA6zzBxkZmx8AuHtMld0.png" alt="Atria" />
+              <div class="ap-meta"><strong>Atria</strong><span>Architecture Studio</span><em>2024</em></div>
+            </button>
+            <button type="button" class="ap-card" data-open="projects" data-project="plinq">
+              <img class="shot" src="assets/img/about-plinq.png" alt="Plinq" />
+              <div class="ap-meta"><strong>Plinq</strong><span>Finance App</span><em>2025</em></div>
+            </button>
+            <button type="button" class="ap-card" data-open="projects" data-project="nuvio">
+              <img class="shot" src="assets/img/about-nuvio.png" alt="Nuvio" />
+              <div class="ap-meta"><strong>Nuvio</strong><span>AI SaaS Product</span><em>2024</em></div>
+            </button>
+            <button type="button" class="ap-card" data-open="projects" data-project="sorae">
+              <img class="shot" src="assets/img/about-sorae.png" alt="Sorae" />
+              <div class="ap-meta"><strong>Sorae</strong><span>Wellness App</span><em>2023</em></div>
+            </button>
+            <button type="button" class="ap-card" data-open="projects" data-project="veyra">
+              <img class="shot" src="assets/img/about-veyra.png" alt="Veyra" />
+              <div class="ap-meta"><strong>Veyra</strong><span>Fashion Brand</span><em>2024</em></div>
+            </button>
+          </div>
+        </div>
+        <div class="about-favs">
+          <h3>My Favorites</h3>
+          <div class="mov-grid about-mov-grid">
+            <div class="mov">
+              <img src="assets/img/dxzK2DcICODtYz6Y9iJ35RvwUmg.png" alt="" />
+              <span class="cap">Interstellar</span>
+              <div class="hover"><div class="hov-top"><span>Sci-Fi • Adventure</span><span>2014</span></div><strong>Interstellar</strong></div>
+            </div>
+            <div class="mov">
+              <img src="assets/img/SyqI8djWrUYnfSGNLetgGF9suiA.png" alt="" />
+              <span class="cap">Severance</span>
+              <div class="hover"><div class="hov-top"><span>Sci-Fi • Mystery</span><span>2002</span></div><strong>Severance</strong></div>
+            </div>
+            <div class="mov">
+              <img src="assets/img/IsZKpTEakU0Y7yEHWW2IuPwqaGI.png" alt="" />
+              <span class="cap">Spider-Verse</span>
+              <div class="hover"><div class="hov-top"><span>Animation • Action</span><span>2018</span></div><strong>Spider-Verse</strong></div>
+            </div>
+            <div class="mov">
+              <img src="assets/img/VmJJ54KaLLdPQ08GicULe6KBI.png" alt="" />
+              <span class="cap">The Dark Night</span>
+              <div class="hover"><div class="hov-top"><span>Action • Crime</span><span>2008</span></div><strong>The Dark Night</strong></div>
+            </div>
+            <div class="mov">
+              <img src="assets/img/UMVXQx5THCNxzcEG66wcvuJ1zvU.png" alt="" />
+              <span class="cap">Breaking Bad</span>
+              <div class="hover"><div class="hov-top"><span>Crime • Drama</span><span>2008</span></div><span class="gem">★ Hidden Gem</span><strong>Breaking Bad</strong><em>“The definition of perfect storytelling.”</em></div>
+            </div>
+            <div class="mov">
+              <img src="assets/img/2pNp8igFHQQ9zk5erMJdLTZeKg.png" alt="" />
+              <span class="cap">The Bear</span>
+              <div class="hover"><div class="hov-top"><span>Comedy • Drama</span><span>2022</span></div><strong>The Bear</strong></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="win" id="win-projects" style="left:324px;top:135px" data-x="324" data-y="135">
+      <div class="titlebar">
+        <div class="traffic"><button class="tl-close" data-act="close"></button><button class="tl-min" data-act="min"></button><button class="tl-max" data-act="max"></button></div>
+        <button class="home-btn" data-open="about" aria-label="Home">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11.5 12 4l9 7.5"/><path d="M6 10.5V20h12v-9.5"/></svg>
+        </button>
+      </div>
+      <div class="proj">
+        <aside class="proj-side">
+          <h4>Projects</h4>
+          <button class="proj-item active" data-key="laver"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18 14 14 0 0 1 0-18"/></svg> Laver</button>
+          <button class="proj-item" data-key="atria"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11.5 12 4l9 7.5"/><path d="M6 10.5V20h12v-9.5"/></svg> Atria</button>
+          <button class="proj-item" data-key="plinq"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="4" width="7" height="7" rx="1"/><rect x="13" y="4" width="7" height="7" rx="1"/><rect x="4" y="13" width="7" height="7" rx="1"/><rect x="13" y="13" width="7" height="7" rx="1"/></svg> Plinq</button>
+          <button class="proj-item" data-key="nuvio"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 7h10M7 12h10M7 17h10"/><path d="m15 7 4 5-4 5M9 7 5 12l4 5"/></svg> Nuvio</button>
+          <button class="proj-item" data-key="sorae"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2 4 4 0 0 1 7 2c0 5.6-7 10-7 10Z"/></svg> Sorae</button>
+          <button class="proj-item" data-key="veyra"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5 14.2 9h6.3l-5.1 4 1.9 6.5L12 16.2 6.7 19.5 8.6 13 3.5 9h6.3L12 2.5Z"/></svg> Veyra</button>
+        </aside>
+        <div class="win-body" id="projDetail"></div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="win" id="win-gallery" style="left:304px;top:118px" data-x="304" data-y="118">
+      <div class="titlebar">
+        <div class="traffic"><button class="tl-close" data-act="close"></button><button class="tl-min" data-act="min"></button><button class="tl-max" data-act="max"></button></div>
+        <div class="win-socials">
+          <a href="#" aria-label="LinkedIn"><img src="assets/icons/linkedin.svg" alt="" /></a>
+          <a href="https://x.com" target="_blank" rel="noreferrer" aria-label="X"><img src="assets/icons/x.svg" alt="" /></a>
+          <a href="https://instagram.com" target="_blank" rel="noreferrer" aria-label="Instagram"><img src="assets/icons/instagram.svg" alt="" /></a>
+        </div>
+      </div>
+      <div class="win-body">
+        <h2 class="win-title">Life Dump - Gallery</h2>
+        <div class="gal-grid">
+          <img src="assets/img/rpHSunPVVu1XAUeDZ3pRRhFCuxg.png" alt="Palmé" />
+          <img src="assets/img/djhJMkCA9g7SYVna9s8voBpQ.png" alt="Club Sol" />
+          <img src="assets/img/5lyoReJJbT7nSdhUNFlcI3S6qk.png" alt="Espresso" />
+          <img src="assets/img/FSt2DFHxkOfTIEO54wG88PqMqo.png" alt="Tennis" />
+          <img src="assets/img/F1tcMrodVxAaobV9cySMUlgKcY.png" alt="Ocean" />
+          <img src="assets/img/h2QQZowFkI1BAiEkr2sbbYN57b8.png" alt="Melville" />
+        </div>
+      </div>
+    </section>
+
+    <!-- REEL -->
+    <section class="win" id="win-reel" style="left:100px;top:119px" data-x="100" data-y="119">
+      <div class="titlebar">
+        <div class="traffic"><button class="tl-close" data-act="close"></button><button class="tl-min" data-act="min"></button><button class="tl-max" data-act="max"></button></div>
+        <div class="win-socials">
+          <a href="#" aria-label="LinkedIn"><img src="assets/icons/linkedin.svg" alt="" /></a>
+          <a href="https://x.com" target="_blank" rel="noreferrer" aria-label="X"><img src="assets/icons/x.svg" alt="" /></a>
+          <a href="https://instagram.com" target="_blank" rel="noreferrer" aria-label="Instagram"><img src="assets/icons/instagram.svg" alt="" /></a>
+        </div>
+      </div>
+      <div class="win-body reel-body">
+        <video
+          class="reel-video"
+          id="reelVideo"
+          src="assets/video/reel.mp4"
+          muted
+          loop
+          playsinline
+          controls
+        ></video>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="win narrow" id="win-contact" style="left:340px;top:118px" data-x="340" data-y="118">
+      <div class="titlebar">
+        <div class="traffic"><button class="tl-close" data-act="close"></button><button class="tl-min" data-act="min"></button><button class="tl-max" data-act="max"></button></div>
+      </div>
+      <div class="win-body">
+        <div class="contact-head">
+          <div>
+            <h2>Mason James</h2>
+            <p class="role">Product Designer <span>|</span> Brooklyn</p>
+          </div>
+          <div class="icon-row">
+            <a href="https://instagram.com" target="_blank" rel="noreferrer" aria-label="Instagram"><img src="assets/icons/instagram.svg" alt="" /></a>
+            <a href="https://x.com" target="_blank" rel="noreferrer" aria-label="X"><img src="assets/icons/x.svg" alt="" /></a>
+            <a href="tel:+84123456789" aria-label="Phone"><img src="assets/icons/phone.svg" alt="" /></a>
+            <a href="mailto:masonjames@designer" aria-label="Mail"><img src="assets/icons/mail.svg" alt="" /></a>
+            <a href="#" aria-label="LinkedIn"><img src="assets/icons/linkedin.svg" alt="" /></a>
+          </div>
+        </div>
+        <p style="margin-bottom:10px;font-size:13px;color:#555">Get In Touch:</p>
+        <form onsubmit="event.preventDefault(); this.querySelector('.btn').textContent='Sent';">
+          <label>Name *</label>
+          <input placeholder="Enter your name" required />
+          <label>Email *</label>
+          <input type="email" placeholder="Enter you email" required />
+          <label>Message</label>
+          <textarea placeholder="Enter your message"></textarea>
+          <button class="btn" type="submit">Submit</button>
+        </form>
+        <p class="fine">Turning ideas into bold digital experiences, products, and visual systems that people remember.</p>
+      </div>
+    </section>
+
+    <!-- RESUME -->
+    <section class="win narrow resume" id="win-resume" style="left:547px;top:55px" data-x="547" data-y="55">
+      <div class="titlebar">
+        <div class="traffic"><button class="tl-close" data-act="close"></button><button class="tl-min" data-act="min"></button><button class="tl-max" data-act="max"></button></div>
+        <div class="win-socials">
+          <a href="#" aria-label="LinkedIn"><img src="assets/icons/linkedin.svg" alt="" /></a>
+          <a href="https://x.com" target="_blank" rel="noreferrer" aria-label="X"><img src="assets/icons/x.svg" alt="" /></a>
+          <a href="https://instagram.com" target="_blank" rel="noreferrer" aria-label="Instagram"><img src="assets/icons/instagram.svg" alt="" /></a>
+        </div>
+      </div>
+      <div class="win-body">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start">
+          <div>
+            <h2 style="font-size:24px">Mason James</h2>
+            <p style="color:#555;margin-top:4px">Product Designer (UI/UX)</p>
+          </div>
+          <div class="avail"><span class="dot" style="width:7px;height:7px;border-radius:50%;background:#34c759;display:inline-block"></span> Available for work</div>
+        </div>
+        <div class="stats"><span>6+ Years Experience</span><span>50+ Projects Completed</span><span>25+ Collaborations</span></div>
+        <p>Creative and detail-oriented Product Designer with 7+ years of experience designing SaaS platforms, mobile applications, dashboards, and high-converting websites. Passionate about simplifying complex problems through thoughtful user experiences and clean visual design.</p>
+        <div class="about-meta"><span>masonjames@designer</span><span>+84(123) 456-789</span><span>2025</span></div>
+        <h3 style="margin:22px 0 8px;font-size:15px;color:#888;font-weight:500">Education</h3>
+        <p>University of California · B.A. in Design & Human-Computer Interaction</p>
+        <h3 style="margin:22px 0 8px;font-size:15px;color:#888;font-weight:500">Core Skills</h3>
+        <ul class="skills">
+          <li>Product Design</li><li>Design Systems</li><li>User Research</li>
+          <li>UI Design</li><li>Prototyping</li><li>Usability Testing</li>
+          <li>UX Design</li><li>Wireframing</li><li>Information Architecture</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- RESOURCES -->
+    <section class="win narrow" id="win-resources" style="left:422px;top:135px" data-x="422" data-y="135">
+      <div class="titlebar">
+        <div class="traffic"><button class="tl-close" data-act="close"></button><button class="tl-min" data-act="min"></button><button class="tl-max" data-act="max"></button></div>
+        <div class="win-socials">
+          <a href="#" aria-label="LinkedIn"><img src="assets/icons/linkedin.svg" alt="" /></a>
+          <a href="https://x.com" target="_blank" rel="noreferrer" aria-label="X"><img src="assets/icons/x.svg" alt="" /></a>
+          <a href="https://instagram.com" target="_blank" rel="noreferrer" aria-label="Instagram"><img src="assets/icons/instagram.svg" alt="" /></a>
+        </div>
+      </div>
+      <div class="win-body">
+        <h2 class="win-title">Resources</h2>
+        <div class="res-grid">
+          <a class="res" href="https://www.framer.com/academy" target="_blank"><img src="assets/img/ivkHkH1OVxe7Y3M9G6MFEOlpoI.png" alt="" />F University</a>
+          <a class="res" href="https://lucide.dev" target="_blank"><img src="assets/img/1qvuKxFW53ilv6MzO5iF2rqkuA.png" alt="" />Lucid Icons</a>
+          <a class="res" href="https://shapes.framer.website" target="_blank" rel="noreferrer"><img src="assets/img/718cstFZ8jnqtjMobHMpAqxKC0.png" alt="" />Shapes Gallery</a>
+          <a class="res" href="https://rive.app" target="_blank"><img src="assets/img/TSz3ChM096h7eAE999wqWvMztY.png" alt="" />Rive</a>
+          <a class="res" href="https://www.fontsquirrel.com" target="_blank"><img src="assets/img/E3oWCwDwxDGd5R4qwIVHzes1ogc.png" alt="" />Fonts Ninja</a>
+          <a class="res" href="https://haikei.app" target="_blank"><img src="assets/img/BQOZ3jbADhKA4g05AVskN29Ssw.png" alt="" />Haikei</a>
+          <a class="res" href="https://svggobbler.com" target="_blank" rel="noreferrer"><img src="assets/img/MioMfE11fCCXFttjA1102lwsRDw.png" alt="" />SVG Gobbler</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- MOVIES -->
+    <section class="win" id="win-movies" style="left:386px;top:135px" data-x="386" data-y="135">
+      <div class="titlebar">
+        <div class="traffic"><button class="tl-close" data-act="close"></button><button class="tl-min" data-act="min"></button><button class="tl-max" data-act="max"></button></div>
+        <div class="win-socials">
+          <a href="#" aria-label="LinkedIn"><img src="assets/icons/linkedin.svg" alt="" /></a>
+          <a href="https://x.com" target="_blank" rel="noreferrer" aria-label="X"><img src="assets/icons/x.svg" alt="" /></a>
+          <a href="https://instagram.com" target="_blank" rel="noreferrer" aria-label="Instagram"><img src="assets/icons/instagram.svg" alt="" /></a>
+        </div>
+      </div>
+      <div class="win-body">
+        <h2 class="win-title">My Favorites</h2>
+        <div class="mov-grid">
+          <div class="mov"><img src="assets/img/dxzK2DcICODtYz6Y9iJ35RvwUmg.png" alt="" /><span class="cap">Interstellar</span><div class="hover"><div class="hov-top"><span>Sci-Fi • Adventure</span><span>2014</span></div><strong>Interstellar</strong></div></div>
+          <div class="mov"><img src="assets/img/SyqI8djWrUYnfSGNLetgGF9suiA.png" alt="" /><span class="cap">Severance</span><div class="hover"><div class="hov-top"><span>Sci-Fi • Mystery</span><span>2002</span></div><strong>Severance</strong></div></div>
+          <div class="mov"><img src="assets/img/IsZKpTEakU0Y7yEHWW2IuPwqaGI.png" alt="" /><span class="cap">Spider-Verse</span><div class="hover"><div class="hov-top"><span>Animation • Action</span><span>2018</span></div><strong>Spider-Verse</strong></div></div>
+          <div class="mov"><img src="assets/img/VmJJ54KaLLdPQ08GicULe6KBI.png" alt="" /><span class="cap">The Dark Night</span><div class="hover"><div class="hov-top"><span>Action • Crime</span><span>2008</span></div><strong>The Dark Night</strong></div></div>
+          <div class="mov"><img src="assets/img/UMVXQx5THCNxzcEG66wcvuJ1zvU.png" alt="" /><span class="cap">Breaking Bad</span><div class="hover"><div class="hov-top"><span>Crime • Drama</span><span>2008</span></div><span class="gem">★ Hidden Gem</span><strong>Breaking Bad</strong><em>“The definition of perfect storytelling.”</em></div></div>
+          <div class="mov"><img src="assets/img/2pNp8igFHQQ9zk5erMJdLTZeKg.png" alt="" /><span class="cap">The Bear</span><div class="hover"><div class="hov-top"><span>Comedy • Drama</span><span>2022</span></div><strong>The Bear</strong></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- iPod -->
+    <div class="ipod-layer" id="ipod">
+      <div class="ipod" id="ipodDevice">
+        <div class="ipod-screen" id="ipodScreen">
+          <div class="yt-host">
+            <video
+              id="ytPlayer"
+              playsinline
+              webkit-playsinline
+              preload="auto"
+            ></video>
+          </div>
+          <img id="ytPoster" class="ipod-poster" alt="" />
+          <button type="button" class="yt-overlay" id="ytOverlay" aria-label="Play song">
+            <span class="yt-btn" aria-hidden="true">
+              <svg viewBox="0 0 68 48" width="44" height="31">
+                <path fill="#FF0000" d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55C3.97 2.33 2.26 4.81 1.48 7.74 0 13.05 0 24 0 24s0 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C68 34.95 68 24 68 24s0-10.95-1.48-16.26z"/>
+                <path fill="#fff" d="M45 24 27 14v20"/>
+              </svg>
+            </span>
+          </button>
+          <div class="ipod-ui" id="ipodUi"></div>
+        </div>
+        <div class="wheel" id="ipodWheel">
+          <div class="wheel-shine"></div>
+          <button type="button" class="wh m" data-ipod="menu" aria-label="Menu">
+            <svg width="32" height="12" viewBox="0 0 32 12" fill="#666" aria-hidden="true"><text x="16" y="9" font-size="9" font-weight="bold" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif">MENU</text></svg>
+          </button>
+          <button type="button" class="wh l" data-ipod="prev" aria-label="Previous">
+            <svg width="12" height="12" viewBox="0 0 16 16" fill="#666" aria-hidden="true"><rect x="1" y="2" width="2" height="12"></rect><polygon points="10,2 4,8 10,14"></polygon><polygon points="16,2 10,8 16,14"></polygon></svg>
+          </button>
+          <button type="button" class="wh r" data-ipod="next" aria-label="Next">
+            <svg width="12" height="12" viewBox="0 0 16 16" fill="#666" aria-hidden="true"><polygon points="0,2 6,8 0,14"></polygon><polygon points="6,2 12,8 6,14"></polygon><rect x="13" y="2" width="2" height="12"></rect></svg>
+          </button>
+          <button type="button" class="wh p" data-ipod="play" aria-label="Play">
+            <svg width="12" height="12" viewBox="0 0 16 16" fill="#666" aria-hidden="true"><polygon points="4,2 14,8 4,14"></polygon></svg>
+          </button>
+          <button type="button" class="hub" data-ipod="select" aria-label="Select"><span class="hub-gloss"></span></button>
+        </div>
+        <button class="ipod-x" data-act="close-ipod" aria-label="Close">×</button>
+      </div>
+    </div>
+
+    <!-- Game -->
+    <div class="game-layer" id="game">
+      <div class="game-stage" id="gameStage">
+        <iframe
+          id="gameFrame"
+          title="Herding cats"
+          src="about:blank"
+          allow="autoplay; fullscreen; gamepad"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+
+  <img id="neko" alt="" src="assets/img/sleep2.gif" />
+  <div class="intro" id="intro">
+    <svg class="hello-svg" viewBox="0 0 638 200" fill="none" stroke="#fff" stroke-width="14.8883" aria-label="hello">
+      <title>hello</title>
+      <path d="M8.69214 166.553C36.2393 151.239 61.3409 131.548 89.8191 98.0295C109.203 75.1488 119.625 49.0228 120.122 31.0026C120.37 17.6036 113.836 7.43883 101.759 7.43883C88.3598 7.43883 79.9231 17.6036 74.7122 40.9363C69.005 66.5793 64.7866 96.0036 54.1166 190.356" pathLength="1"></path>
+      <path d="M55.1624 181.135C60.6251 133.114 81.4118 98.0479 107.963 98.0479C123.844 98.0479 133.937 110.703 131.071 128.817C129.457 139.487 127.587 150.405 125.408 163.06C122.869 178.941 130.128 191.348 152.122 191.348C184.197 191.348 219.189 173.523 237.097 145.915C243.198 136.509 245.68 128.073 245.928 119.884C246.176 104.996 237.739 93.8296 222.851 93.8296C203.992 93.8296 189.6 115.17 189.6 142.465C189.6 171.745 205.481 192.341 239.208 192.341C285.066 192.341 335.86 137.292 359.199 75.8585C365.788 58.513 368.26 42.4065 368.26 31.1512C368.26 17.8057 364.042 7.55823 352.131 7.55823C340.469 7.55823 332.777 16.6141 325.829 30.9129C317.688 47.4967 311.667 71.4162 309.203 98.4549C303 166.301 316.896 191.348 349.936 191.348C390 191.348 434.542 135.534 457.286 75.6686C463.803 58.513 466.275 42.4065 466.275 31.1512C466.275 17.8057 462.057 7.55823 450.146 7.55823C438.484 7.55823 430.792 16.6141 423.844 30.9129C415.703 47.4967 409.682 71.4162 407.218 98.4549C401.015 166.301 414.911 191.348 444.416 191.348C473.874 191.348 489.877 165.67 499.471 138.402C508.955 111.447 520.618 94.8221 544.935 94.8221C565.035 94.8221 580.916 109.71 580.916 137.75C580.916 168.768 560.792 192.093 535.362 192.341C512.984 192.589 498.285 174.475 499.774 147.179C501.511 116.907 519.873 94.8221 543.943 94.8221C557.839 94.8221 569.51 100.999 578.682 107.725C603.549 125.866 622.709 114.656 630.047 96.7186" pathLength="1"></path>
+    </svg>
+  </div>
+  <script src="js/app.js?v=44"></script>
+</body>
+</html>
