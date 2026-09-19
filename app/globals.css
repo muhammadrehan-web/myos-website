@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Mona Sans";
-  src: url("../assets/fonts/o-0mIpQmx24alC5A4PNB6Ryti20_6n1iPHjcz6L1SoM-jCpoiyDPA99Y41P6zHtY.woff2") format("woff2");
+  src: url("/assets/fonts/o-0mIpQmx24alC5A4PNB6Ryti20_6n1iPHjcz6L1SoM-jCpoiyDPA99Y41P6zHtY.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -34,7 +34,7 @@ button { font-family: inherit; background: none; border: 0; color: inherit; }
 .wallpaper {
   position: absolute;
   inset: 0;
-  background: #071018 url("../assets/img/L3s1hyYqQ49leQTOTCfl0j5WMPQ.jpg") center / cover no-repeat;
+  background: #071018 url("/assets/img/L3s1hyYqQ49leQTOTCfl0j5WMPQ.jpg") center / cover no-repeat;
   filter: contrast(1.02);
 }
 
@@ -56,7 +56,7 @@ button { font-family: inherit; background: none; border: 0; color: inherit; }
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #071018 url("../assets/img/L3s1hyYqQ49leQTOTCfl0j5WMPQ.jpg") center / cover no-repeat;
+  background: #071018 url("/assets/img/L3s1hyYqQ49leQTOTCfl0j5WMPQ.jpg") center / cover no-repeat;
   cursor: pointer;
 }
 .intro::after {
