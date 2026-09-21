@@ -15,11 +15,9 @@ function place(layout: (typeof WINDOW_LAYOUTS)[number], vw: number, vh: number) 
 }
 
 function initialWindows(): Record<WindowId, WinRuntime> {
-  const vw = typeof window === "undefined" ? 1440 : window.innerWidth;
-  const vh = typeof window === "undefined" ? 900 : window.innerHeight;
   const next = {} as Record<WindowId, WinRuntime>;
   WINDOW_LAYOUTS.forEach((layout, index) => {
-    const pos = place(layout, vw, vh);
+    const pos = place(layout, 1440, 900);
     next[layout.id] = { open: false, max: false, z: 20 + index, left: pos.left, top: pos.top };
   });
   return next;

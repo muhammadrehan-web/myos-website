@@ -22,6 +22,7 @@ interface Props {
 }
 
 export function OsWindow({
+  id,
   className = "",
   style,
   open,
@@ -37,7 +38,11 @@ export function OsWindow({
   onPointerDownBar,
 }: Props) {
   return (
-    <section className={`win ${className} ${open ? "open" : ""} ${max ? "max" : ""}`} style={{ ...style, zIndex: z }}>
+    <section
+      id={`win-${id}`}
+      className={`win ${className} ${open ? "open" : ""} ${max ? "max" : ""}`}
+      style={{ ...style, zIndex: z }}
+    >
       <div className="titlebar" onPointerDown={onPointerDownBar}>
         <div className="traffic">
           <button className="tl-close" type="button" onClick={onClose} />
